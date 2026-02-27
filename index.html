@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bonafide Certificate</title>
+
+<style>
+    body {
+        background: #e6e6e6;
+        font-family: "Times New Roman", serif;
+    }
+
+    .page {
+        width: 794px;       /* A4 width */
+        min-height: 1123px; /* A4 height */
+        background: white;
+        margin: 20px auto;
+        padding: 40px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .college-name {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .trust {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .address {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    hr {
+        border: 1px solid #000;
+        margin: 10px 0;
+    }
+
+    .date {
+        text-align: right;
+        font-size: 14px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 25px 0;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 2;
+        text-align: justify;
+        font-weight: bolder;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid black;
+        font-size: 16px;
+        font-family: "Times New Roman", serif;
+        width: 250px;
+        font-weight: bold;
+    }
+
+    .small {
+        width: 45px;
+        font-weight: bolder;
+    }
+
+    .dtsmall {
+        width: 120px;
+    }
+
+    .footer {
+                display: inline-block;
+
+        margin-top: 80px;
+        text-align: right;
+        font-weight: bold;
+        width: 300px;
+        
+    }
+
+    .print-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+   
+
+    @media print {
+        body {
+            background: none;
+        }
+        .page {
+            box-shadow: none;
+            margin: 0;
+        }
+        .print-btn {
+            display: none;
+        }
+
+    }
+    .signature{
+        float:right;
+    
+        align-items:center;
+        height: 150px;
+
+        
+
+    }
+    .seal{
+                display: inline-block;
+
+        float: left;
+        
+    }
+</style>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">Print/Save Certificate</button>
+<div class="page">
+    <div class="center trust">
+        Raghvendra Shikshan Prasarak Mandal’s
+    </div>
+    <div class="center college-name">
+        Late. Junasing Mangtu College of Engineering (Diploma)
+    </div>
+    <div class="center address">
+        Kannad Road, Near By pass T-Point, Chalisgaon Tal. Chalisgaon, Dist. Jalgaon (MS).<br>
+        Ph. No. (02589) 249677
+    </div>
+    <hr>
+    <div class="date">
+        Date: <input type="text" class="dtsmall"placeholder="DD/MM/YYYY">
+    </div>
+    <div class="title">
+        BONAFIDE CERTIFICATE
+    </div>
+    <p>
+        This is to certify that Shri./Kum.
+        <input type="text" placeholder="NAME OF STUDENT IN CAPITAL"> is/was a Bonafide Student of this institute.
+        His/her date of birth is
+        <input type="text" class="small" placeholder="DD"> /
+        <input type="text" class="small"placeholder="MM"> /
+        <input type="text" class="small" placeholder="YYYY">
+        as per leaving certificate and he/she studying Diploma course in
+        <input type="text" placeholder="BRANCH ">
+        Roll No.
+        <input type="text" class="small"> .
+    </p>
+    <p>
+        During the academic year
+        20 <input type="text" class="small"> -
+        20 <input type="text" class="small"> .
+    </p>
+    <p>
+        To the best of my knowledge he/she bears a good moral character.
+    </p>
+<div class="signature">
+    <img src="sealnsig.jpg" alt="">
+    </div >
+</div>
+</div>
+</body>
+</html>
